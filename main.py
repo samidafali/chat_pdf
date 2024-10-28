@@ -1,9 +1,8 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_openai.chat_models import ChatOpenAI
-
+from langchain_openai.embeddings import OpenAIEmbeddings  # Mise à jour ici
+from langchain_openai.chat_models import ChatOpenAI 
 from langchain.chains import ConversationalRetrievalChain
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
